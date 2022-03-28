@@ -6,6 +6,7 @@ frontend:
         - npm install
     build:
       commands:
+        - amplify push
         - ls -l
         - ls -l src/
         - test -f src/aws-exports.js && cp src/aws-exports.js . # temporary. Amplify is ignoring SourceDir and outputs aws-exports.js to a wrong path
